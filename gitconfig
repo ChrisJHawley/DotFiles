@@ -1,0 +1,25 @@
+[user]
+	name = Chris Hawley
+    email = chris@phenorbital.co.uk
+[core]
+  whitespace = tabwidth=4
+[diff]
+  tool = vimdiff
+[merge]
+  tool = vimdiff
+[alias]
+  a = add
+  aa = add -A
+  ci = commit
+  co = checkout
+  d = difftool
+  di = difftool
+  fa = fetch -all
+  fe = fetch
+  lg = log --graph --pretty='%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+  st = status
+[color]
+  branch = auto
+  diff = auto
+  interactive = auto
+  status = auto
