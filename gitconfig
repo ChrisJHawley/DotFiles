@@ -1,6 +1,6 @@
 [user]
-	name = Chris Hawley
-    email = chris@phenorbital.co.uk
+  name = Chris Hawley
+  email = chris@phenorbital.co.uk
 [core]
   whitespace = tabwidth=4
 [diff]
