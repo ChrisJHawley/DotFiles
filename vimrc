@@ -67,3 +67,13 @@ set display+=lastline
 
 set number
 
+" I can't always type well...
+iab boolena boolean
+iab pirnt print
+iab pritn print
+iab serach search
+iab vairable variable
+iab varibale variable
+iab varibales varibales
+iab udpate update
+iab teh the
