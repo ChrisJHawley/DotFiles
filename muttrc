@@ -23,4 +23,5 @@ unignore from date subject to cc
 unignore organization organisation x-mailer: x-newsreader: x-mailing-list:
 unignore posted-to:
 
+alternative_order text/plain
 auto_view text/html
