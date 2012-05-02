@@ -22,6 +22,6 @@ alias konsole="konsole --force-transparency"
 alias psg="ps aux | grep "
 alias gmake="make"
 
-alias sshgw="ssh -t -C -X chrihaw@lnsshgw.ms.com malachi"
+alias sshgw="ssh -t -C -X chrihaw@lnsshgw.ms.com"
 
 # vim:ft=sh
