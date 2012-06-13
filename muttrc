@@ -7,6 +7,11 @@ set postponed="+.Drafts"
 set spoolfile="~/Maildir"
 set realname="Chris Hawley"
 
+# Forward things as I'd want
+set forward_format="FW: %s"
+set mime_forward=yes
+set mime_forward_rest=yes
+
 # Keep things as new even when moving around
 set mark_old=no
 
