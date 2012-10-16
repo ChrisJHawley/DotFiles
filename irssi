@@ -373,7 +373,8 @@ channels = (
   { name = "#music"; chatnet = "CompSoc"; autojoin = "yes"; },
   { name = "#goatse"; chatnet = "CompSoc"; autojoin = "yes"; },
   { name = "#rLSC"; chatnet = "synirc"; autojoin = "yes"; },
-  { name = "#reddit-nfl"; chatnet = "freenode"; autojoin = "yes"; }
+  { name = "#reddit-nfl"; chatnet = "freenode"; autojoin = "yes"; },
+  { name = "#rlsc-polarbear"; chatnet = "synirc"; autojoin = "yes"; }
 );
 statusbar = {
   default = {
@@ -545,16 +546,7 @@ windows = {
       }
     );
   };
-  17 = {
-    items = (
-      {
-        type = "CHANNEL";
-        chat_type = "IRC";
-        name = "#lamby-xen";
-        tag = "OFTC";
-      }
-    );
-  };
+  17 = { };
   18 = {
     items = (
       { 
@@ -640,10 +632,30 @@ windows = {
       {
         type = "CHANNEL";
         chat_type = "IRC";
-        name = "#rlsc";
+        name = "#rLSC";
+        tag = "synirc";
+      }
+    );
+  };
+  27 = {
+    items = (
+      {
+        type = "CHANNEL";
+        chat_type = "IRC";
+        name = "#rlsc-polarbear";
+        tag = "synirc";
+      }
+    );
+  };
+  28 = {
+    items = (
+      {
+        type = "QUERY";
+        chat_type = "IRC";
+        name = "polarbear";
         tag = "synirc";
       }
     );
   };
 };
-mainwindows = { 1 = { first_line = "1"; lines = "40"; }; };
+mainwindows = { 27 = { first_line = "1"; lines = "14"; }; };
