@@ -1,34 +1,21 @@
-set mbox_type=Maildir
-set folder="~/Maildir"
-set mask=^\\.[^.]"
-set mbox="~/Maildir"
-set record="+.Sent"
-set postponed="+.Drafts"
-set spoolfile="~/Maildir"
-set realname="Chris Hawley"
+set spoolfile="imap://chris@bloodgod/INBOX"
+set folder="imap://chris@bloodgod/INBOX"
+set record="=Sent"
+set postponed="=Drafts"
+set ssl_starttls=yes
+set timeout=15
 
-# Forward things as I'd want
+set realname="Chris Hawley"
 set forward_format="FW: %s"
 set mime_forward=yes
 set mime_forward_rest=yes
 
-# Keep things as new even when moving around
 set mark_old=no
 
-mailboxes `echo -n "+ "; find ~/Maildir -maxdepth 1 -type d -name ".*" -printf "+'%f' "`
-
-macro index c "<change-folder>?<toggle-mailboxes>" "open a different folder"
-macro pager c "<change-folder>?<toggle-mailboxes>" "open a different folder"
-
-macro index C "<copy-message>?<toggle-mailboxes>" "copy a message to a mailbox"
-macro index M "<save-message>?<toggle-mailboxes>" "move a message to a mailbox"
-
-macro compose A "<attach-message>?<toggle-mailboxes>" "attach message(s) to this message"
-
-# Sven's draconian header weeding
+# Header weeding
 ignore *
 unignore from date subject to cc
-unignore organization organisation x-mailer: x-newsreader: x-mailing-list:
+unignore organization organisation x-mailing-list:
 unignore posted-to:
 
 alternative_order text/plain
