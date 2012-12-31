@@ -39,6 +39,8 @@ if has('syntax')
 endif
 
 " Other useful shortcuts
+" F5 to reload open file
+map <F5> :e <CR><LF>
 " F6 to set modifiable
 map <F6> :set modifiable! <CR><LF>
 " F7 to toggle paste mode
