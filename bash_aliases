@@ -24,4 +24,7 @@ alias gmake="make"
 
 alias sshgw="ssh -t -C -X chrihaw@lnsshgw.ms.com"
 
+# Too much effort to type in full on the phone
+alias sdr="screen -Dr"
+
 # vim:ft=sh
